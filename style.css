@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em sans-serif;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* PROFILE CARD STYLING */
+
+.profile-card {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar {
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* USER DETAILS STYLING */
+
+.user-bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 1.2rem;
+}
+
+.user-time {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+}
+
+/* social links styling */
+.user-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.user-social-links a {
+    color: rgb(145, 143, 143);
+    transition: color 0.3s ease;
+}
+
+.user-social-links a:hover {
+    color: rgb(29, 122, 252);
+}
+
+.user-social-links a:focus-visible {
+    outline: 2px solid rgb(59, 130, 246);
+    outline-offset: 2px;
+}
+
+.user-social-links svg {
+    width: 24px;
+    height: 24px;
+    transition: 0.2s ease;
+}
+
+.user-social-links svg:hover {
+    transform: scale(1.15);
+}
+
+
+/* user interest (hobbies and dislikes)*/
+.user-interests {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.user-interests h3 {
+    color: #2d3748;
+    margin: 0 0 0.5rem 0;
+    margin-bottom: 0;
+}
+
+.user-interests ul {
+    padding-left: 1.2rem;
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive design for wider screens (PC's & Tablets) */
+@media screen and (min-width:768px) {
+
+    .profile-card {
+        flex-direction: row;
+        align-items: justify;
+        max-width: 900px;
+        text-align: left;
+        padding: 2rem 0;
+    }
+
+
+    .profile-avatar {
+        width: 320px;
+        border-radius: 50%;
+    }
+
+
+    /* USER DETAILS STYLING */
+    .user-name {
+        font-size: 1.6rem;
+    }
+
+    .user-bio {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        padding-left: 0;
+    }
+
+    .user-time {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    /* social links styling */
+    .user-social-links {
+        justify-content: flex-start;
+    }
+
+    /* user interest */
+    .user-interests {
+        padding-left: 0;
+    }
+
+
+    .user-interests h3 {
+        font-size: 1.25rem;
+    }
+
+    .user-interests ul {
+        padding-left: 1.2rem;
+        margin: 0 0 1.5rem;
+        font-size: 1rem;
+    }
+}
