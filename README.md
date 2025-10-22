@@ -2,6 +2,8 @@
 
 This repository contains a simple, single-page Profile Card implemented using HTML, CSS, and minimal JavaScript. It showcases a user profile with their photo, name, bio, social links, hobbies, dislikes, and a dynamic current time display.
 
+## UPDATED. I added an About Us page and a Contact me
+
 ## 🚀 Key Features
 **Responsive Design:** Uses CSS for layout adjustments.
 
