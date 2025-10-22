@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em sans-serif;
+    background-color: rgb(211, 211, 211);
+}
+
+/* NAVIGATION STYLING */
+
+.profile-nav {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1.5rem auto;
+    padding: 1rem 0;
+}
+
+.profile-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.profile-nav a:hover {
+    background: rgb(220, 220, 220);
+}
+
+.active{
+    font-weight: bold;
+    background: rgb(220, 220, 220);
+}
+
+/* PROFILE CARD STYLING */
+
+main {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive design for wider screens (PC's & Tablets) */
+@media screen and (min-width:768px) {
+
+    /* NAVIGATION STYLING */
+    .profile-nav {
+        max-width: 900px;
+    }
+
+    .profile-nav ul {
+        gap: 2rem;
+    }
+
+    /* PROFILE CARD STYLING */
+    main {
+        /* flex-direction: row; */
+        align-items: justify;
+        max-width: 900px;
+        text-align: left;
+        padding: 2rem 0;
+    }
+
+}
